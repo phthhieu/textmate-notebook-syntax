@@ -1,0 +1,144 @@
+@import "syntax-variables";
+
+atom-text-editor, :host {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+}
+
+atom-text-editor .gutter, :host .gutter {
+  background-color: @syntax-gutter-background-color;
+  color: @syntax-gutter-text-color;
+}
+
+atom-text-editor .gutter .line-number.cursor-line, :host .gutter .line-number.cursor-line {
+  background-color: @syntax-gutter-background-color-selected;
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .gutter .line-number.cursor-line-no-selection, :host .gutter .line-number.cursor-line-no-selection {
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .wrap-guide, :host .wrap-guide {
+  color: @syntax-wrap-guide-color;
+}
+
+atom-text-editor .indent-guide, :host .indent-guide {
+  color: @syntax-indent-guide-color;
+}
+
+atom-text-editor .invisible-character, :host .invisible-character {
+  color: @syntax-invisible-character-color;
+}
+
+atom-text-editor .search-results .marker .region, :host .search-results .marker .region {
+  background-color: transparent;
+  border: @syntax-result-marker-color;
+}
+
+atom-text-editor .search-results .marker.current-result .region, :host .search-results .marker.current-result .region {
+  border: @syntax-result-marker-color-selected;
+}
+
+atom-text-editor.is-focused .cursor, :host(.is-focused) .cursor {
+  border-color: @syntax-cursor-color;
+}
+
+atom-text-editor.is-focused .selection .region, :host(.is-focused) .selection .region {
+  background-color: @syntax-selection-color;
+}
+
+atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-editor.is-focused .line.cursor-line, :host(.is-focused) .line-number.cursor-line-no-selection, :host(.is-focused) .line.cursor-line {
+  background-color: rgba(255, 255, 255, 0.16);
+}
+
+.comment {
+  font-style: italic;
+  color: rgba(255, 238, 206, 0.5);
+}
+
+.punctuation.section.embedded {
+  color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.string {
+  color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(233, 217, 43, 0.75);
+}
+
+.constant.numeric {
+  color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(154, 255, 66, 0.75);
+}
+
+.constant.language {
+  color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(101, 216, 230, 0.75);
+}
+
+.constant.character, .constant.other {
+  color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(101, 216, 230, 0.75);
+}
+
+.variable.language, .variable.other {
+  color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(102, 147, 82, 0.36);
+}
+
+.keyword {
+  color: #C52727;
+}
+
+.constant.character.entity {
+  color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(143, 230, 211, 0.75);
+}
+
+.storage {
+  color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(166, 156, 134, 0.75);
+}
+
+.entity.name.type.class, .support.class {
+  color: #1D368F;
+}
+
+.entity.other.inherited-class {
+}
+
+.entity.name.function {
+  text-decoration: underline;
+}
+
+.variable.parameter {
+}
+
+.entity.name.tag, .entity.other.attribute-name.class.css, .entity.other.attribute-name.id.css {
+  color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(177, 166, 143, 0.75);
+}
+
+.entity.other.attribute-name {
+  text-decoration: underline;
+}
+
+.support.function, .support.constant.property-value.css {
+  color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(249, 85, 155, 0.43);
+}
+
+.support.constant {
+}
+
+.support.type, .support.class {
+}
+
+.support.other.variable {
+}
+
+.invalid {
+  color: #FFFFFF;
+  background-color: #BF363B;
+}
